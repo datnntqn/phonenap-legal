@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F7FCF9">
+<!-- Safari Smart App Banner: fill in the App Store id once the app is live -->
+<!-- <meta name="apple-itunes-app" content="app-id=0000000000"> -->
+<title>PhoneNap: a pixel pet that grows when you put your phone down</title>
+<meta name="description" content="PhoneNap is a pixel pet for iPhone. Keep your screen time limits and finish focus sessions, and your pet grows. Private by design: your app usage never leaves your phone.">
+<meta property="og:title" content="PhoneNap">
+<meta property="og:description" content="A pixel pet that grows when you put your phone down.">
+<meta property="og:image" content="https://datnntqn.github.io/phonenap-legal/assets/icon-512.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><img src="assets/icon-512.png" alt="" width="36" height="36">PhoneNap</a>
+  <div class="right"><nav><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav><a class="btn get" href="#" data-appstore data-soon="Soon">Get</a></div>
+</header>
+
+<main>
+<section class="wrap hero">
+  <h1>How much life is in a few minutes?</h1>
+  <div class="stage night" id="stage">
+    <div class="win"><img id="winIcon" src="assets/sprites/moon.svg" alt=""></div>
+    <span class="z" style="left:60%;top:30%">z</span><span class="z b" style="left:65%;top:24%">Z</span>
+    <div class="say" id="say" hidden></div>
+    <div class="pet" id="pet"><img id="petImg" src="assets/sprites/catSleep.svg" alt="Your pet"></div>
+    <div class="gems" id="gems"></div>
+  </div>
+  <div class="calc">
+    <p class="q">If I put my phone down for <span class="mins" id="m">15</span> minutes a day</p>
+    <input id="r" type="range" min="5" max="120" step="5" value="15" aria-label="Minutes a day">
+    <div class="span" id="span" role="group" aria-label="Over">
+      <span class="ind" id="ind" style="left:66.667%"></span>
+      <button data-y="1" data-i="0">1 year</button><button data-y="10" data-i="1">10 years</button><button data-y="50" data-i="2" aria-pressed="true">50 years</button>
+    </div>
+    <div class="out" aria-live="polite"><span class="big" id="d">0</span><span class="unit">days of my life back<small id="h">about 6 months</small></span></div>
+    <div class="days" id="g" aria-hidden="true"></div>
+    <div class="legend" id="lg">each block is one day</div>
+    <a class="btn cta" href="#" data-appstore data-soon="Coming soon to the App Store">Download on the App Store</a>
+  </div>
+</section>
+
+<section class="wrap rule feat" id="features">
+  <h2>A pet that grows when you look up.</h2>
+  <p class="lede">Keep your limits and finish focus sessions. Your pet eats, levels up and never dies. It just gets a little sad.</p>
+  <div class="rail" id="rail">
+    <article class="card"><div class="phone"><div class="scr"><img loading="lazy" src="assets/shots/focus.png" alt="Focus session"></div></div><h3><img src="assets/sprites/hourglass.svg" alt="">Focus feeds your pet</h3><p>Start a timer and leave the phone alone. Finish and your pet gets dinner.</p></article>
+    <article class="card"><div class="phone"><div class="scr"><img loading="lazy" src="assets/shots/breathe.png" alt="Breathe screen"></div></div><h3><img src="assets/sprites/shield.svg" alt="">A breath before you scroll</h3><p>Distracting apps open with a short breathing moment. Open for 10 minutes, or close and earn a heart.</p></article>
+    <article class="card"><div class="phone"><div class="scr"><img loading="lazy" src="assets/shots/rules.png" alt="Rules"></div></div><h3><img src="assets/sprites/moon.svg" alt="">Limits that fit your day</h3><p>Daily limits, open limits and bedtime schedules. Gentle, Medium or Strict. <span class="pro">PRO</span></p></article>
+    <article class="card"><div class="phone"><div class="scr"><img loading="lazy" src="assets/shots/summary.png" alt="Daily summary"></div></div><h3><img src="assets/sprites/flame.svg" alt="">A summary at 10 PM</h3><p>Stay under your limit and your pet celebrates. One shield a week covers a bad day.</p></article>
+    <article class="card"><div class="phone"><div class="scr"><img loading="lazy" src="assets/shots/stats.png" alt="Stats"></div></div><h3><img src="assets/sprites/star.svg" alt="">Your week at a glance</h3><p>Screen time by day, focus minutes, and how often you closed the app.</p></article>
+    <article class="card"><div class="phone"><div class="scr"><img loading="lazy" src="assets/shots/shop.png" alt="Shop"></div></div><h3><img src="assets/sprites/crown.svg" alt="">Hats, bows and crowns</h3><p>Spend gems in the shop. Try every outfit on first.</p></article>
+  </div>
+  <div class="dots" id="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+</section>
+
+<section class="integr rule">
+  <div class="wrap">
+    <div class="inner">
+      <div>
+        <h2>Your pet lives on your iPhone, not just in an app.</h2>
+        <p class="lede">During a focus session your pet runs to the finish in the Dynamic Island and on the Lock Screen.</p>
+      </div>
+      <div>
+        <div class="iphone">
+          <button class="island" id="isl" aria-expanded="false" aria-label="Dynamic Island, focus session">
+            <span class="compact"><span class="cat22"></span><span class="tr"><span id="cd">10:00</span><span class="ring" id="ring" style="--p:.33"></span></span></span>
+            <span class="exp"><img src="assets/shots/live-activity.png" alt="Expanded Live Activity"></span>
+          </button>
+          <div class="lock">Tuesday, November 3<b>9:41</b></div>
+        </div>
+        <p class="hint">Tap the island</p>
+      </div>
+    </div>
+    <div class="rail">
+      <figure class="card" style="margin:0"><div class="w"><img loading="lazy" src="assets/shots/widget-small.png" alt="Home Screen widget"></div><h3>Home Screen widget</h3><p>Your pet breathes and blinks next to your apps. Tap to poke it.</p></figure>
+      <figure class="card" style="margin:0"><div class="w"><img loading="lazy" src="assets/shots/widget-rectangular.png" alt="Lock Screen widget"></div><h3>Lock Screen widget</h3><p>Today's time against your limit, before you unlock.</p></figure>
+      <figure class="card" style="margin:0"><div class="w"><img loading="lazy" src="assets/shots/limit-reached.png" alt="Limit reached screen"></div><h3>Screen Time, built in</h3><p>Uses Apple's own Screen Time to pause the apps you choose.</p></figure>
+    </div>
+  </div>
+</section>
+
+<section class="wrap rule split" id="pricing">
+  <div>
+    <h2>What happens on your phone stays there.</h2>
+    <ul class="promise">
+      <li><img src="assets/sprites/phone.svg" alt=""><div><h3>Nothing leaves your iPhone</h3><p>App names and minutes stay on the device. PhoneNap has no servers to send them to.</p></div></li>
+      <li><img src="assets/sprites/shield.svg" alt=""><div><h3>No ads, no tracking</h3><p>No analytics, no ad networks, nothing sold.</p></div></li>
+      <li><img src="assets/sprites/heart.svg" alt=""><div><h3>No account</h3><p>Pick a pet and start.</p></div></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Free to start.</h2>
+    <div class="plans">
+      <div class="plan"><div><h3>Free</h3><p>One pet, one app group, unlimited focus</p></div><span class="num">$0</span></div>
+      <div class="plan best"><div><h3>Pro yearly</h3><p>7 days free, then Strict mode, schedules, more groups</p></div><span class="num">$29.99</span></div>
+      <div class="plan"><div><h3>Pro monthly</h3><p>Everything in Pro</p></div><span class="num">$4.99</span></div>
+      <div class="plan"><div><h3>Lifetime</h3><p>Pay once, keep Pro</p></div><span class="num">$59.99</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap rule end">
+  <div class="blink"><img src="assets/sprites/dino.svg" alt=""><img src="assets/sprites/dinoBlink.svg" alt=""></div>
+  <h2>Your pet is waiting. Your phone can take a nap.</h2>
+  <a class="btn endcta" href="#" data-appstore data-soon="Coming soon to the App Store">Download on the App Store</a>
+</section>
+</main>
+
+<footer>
+  <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="terms.html">Terms</a></nav>
+  <span>Help: <a href="mailto:danny.ng.it@gmail.com">danny.ng.it@gmail.com</a></span>
+  <span>PhoneNap, 2026</span>
+</footer>
+
+
+<script>
+(function(){
+  const $=id=>document.getElementById(id), reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let years=50; const r=$('r'), g=$('g');
+  const human=d=>d<1?Math.round(d*24)+' hours':d<31?'about '+Math.round(d)+' days':d<365?'about '+Math.round(d/30.4)+' months':'about '+(d/365).toFixed(1)+' years';
+  const fmt=d=>d<10?d.toFixed(1):String(Math.round(d));
+  function mood(m){
+    const st=$('stage'),img=$('petImg'),say=$('say'),pet=$('pet');pet.className='pet';
+    if(m<10){st.classList.add('night');img.src='assets/sprites/catSleep.svg';$('winIcon').src='assets/sprites/moon.svg';say.hidden=true}
+    else{st.classList.remove('night');$('winIcon').src='assets/sprites/spark.svg';say.hidden=false;
+      if(m<30){img.src='assets/sprites/cat.svg';say.textContent='That adds up.';if(!reduce)pet.classList.add('bob')}
+      else{img.src='assets/sprites/catHappy.svg';say.textContent='Let’s go outside!';if(!reduce)pet.classList.add('jump')}}
+  }
+  function blocks(days){
+    const perWeek=days>240,n=Math.min(Math.max(1,Math.round(perWeek?days/7:days)),300);
+    $('lg').textContent=perWeek?'each block is one week':'each block is one day';
+    const cur=g.children.length;
+    if(n<cur){for(let i=cur;i>n;i--)g.lastChild.remove()}
+    else{const f=document.createDocumentFragment();for(let i=cur;i<n;i++){const b=document.createElement('i');b.style.animationDelay=((i-cur)*Math.min(4,600/(n-cur+1)))+'ms';f.appendChild(b)}g.appendChild(f)}
+  }
+  function update(rebuild){const m=+r.value,days=m*365*years/1440;$('m').textContent=m;$('d').textContent=fmt(days);$('h').textContent=human(days);if(rebuild)g.innerHTML='';blocks(days);mood(m)}
+  document.querySelectorAll('#span button').forEach(b=>b.addEventListener('click',()=>{years=+b.dataset.y;$('ind').style.left=(b.dataset.i*33.333)+'%';document.querySelectorAll('#span button').forEach(x=>x.toggleAttribute('aria-pressed',x===b));update(true)}));
+  r.addEventListener('input',()=>update(false));
+  const target=15*365*50/1440;
+  if(reduce){update(false)}else{let f=0;const t=setInterval(()=>{f++;$('d').textContent=fmt(target*f/12);if(f>=12){clearInterval(t);update(false);rain()}},100);blocks(target)}
+  function rain(){const box=$('gems');for(let i=0;i<5;i++){const im=document.createElement('img');im.src='assets/sprites/gem.svg';im.className='spr';im.style.left=(12+i*17)+'%';im.style.animationDelay=(i*90)+'ms';box.appendChild(im);setTimeout(()=>im.remove(),1600)}}
+
+  // swipe dots
+  const rail=$('rail'),dots=[...$('dots').children];
+  rail.addEventListener('scroll',()=>{const w=rail.firstElementChild.offsetWidth+16;const i=Math.round(rail.scrollLeft/w);dots.forEach((d,k)=>d.classList.toggle('on',k===i))},{passive:true});
+
+  // island
+  const isl=$('isl');isl.addEventListener('click',()=>{const o=isl.classList.toggle('open');isl.setAttribute('aria-expanded',o)});
+  let left=600;setInterval(()=>{left=left>0?left-1:600;$('cd').textContent=String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');$('ring').style.setProperty('--p',1-left/900)},1000);
+
+})();
+</script>
+<script src="assets/site.js"></script>
+</body>
+</html>
