@@ -1,5 +1,5 @@
-// The App Store link for every "Get" and "Download" button. Fill in once the app is live.
-const APP_STORE_URL = '';
+// The App Store link for every "Get" and "Download" button. Empty = buttons show "Coming soon".
+const APP_STORE_URL = 'https://apps.apple.com/us/app/phonenap-screen-time-blocker/id6829627663';
 
 document.querySelectorAll('[data-appstore]').forEach((a) => {
   if (APP_STORE_URL) {
